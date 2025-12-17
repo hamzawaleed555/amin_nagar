@@ -109,6 +109,24 @@ section, .card, header, footer, .container{
 background: rgba(0,0,0,0.3) !important;
 backdrop-filter: blur(4px);
 }
+    
+.video-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden; 
+}
+
+
+.video-box video {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  display: block;
+}
+
 </style>
 </head>
 <body>
@@ -191,7 +209,7 @@ backdrop-filter: blur(4px);
 <div style="background:#fff; padding:10px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
 <img src="7 copy.jpg" style="width:100%; height:350px; object-fit:cover; border-radius:10px;"/></a>
 </div>
-<div class="video-card">
+<div class="video-box">
   <video autoplay muted loop playsinline>
     <source src="vid1.mp4" type="video/mp4">
   </video>
